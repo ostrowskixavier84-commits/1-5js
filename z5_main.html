@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Szkielet zaliczeniowy JavaScript - Ostrowski</title>
+<script type="text/javascript">
+function WinOpen_z1() {
+    window.open("z1_ost.html", "okienko_z1", "toolbar=no,directories=no,menubar=no,height=300,width=400,top=100,left=100");
+}
+function WinOpen_z2() {
+    window.open("z2_ost.html", "okienko_z2", "toolbar=no,directories=no,menubar=no,height=300,width=400,top=100,left=150");
+}
+function WinOpen_z3() {
+    window.open("z3_ost.html", "okienko_z3", "toolbar=no,directories=no,menubar=no,height=380,width=250,top=200,left=200");
+}
+function WinOpen_z4() {
+    window.open("z4_ost.html", "okienko_z4", "toolbar=no,directories=no,menubar=no,height=500,width=600,top=100,left=300");
+}
+function WinOpen_z5() {
+    window.open("z5_grafiki.html", "okienko_z5", "toolbar=no,directories=no,menubar=no,height=400,width=600,top=150,left=350");
+}
+function okno_zamknij() {
+    window.close();
+}
+</script>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        padding: 30px;
+    }
+    h1 {
+        color: red; 
+        font-size: 1.6cm;
+        margin-bottom: 30px;
+}
+</style>
+</head>
+<body>
+
+<h1>Szkielet zaliczeniowy JavaScript Xavier Ostrowski klasa 3F</h1>
+
+<form>
+    <input type="button" value="zadanie1-Ostrowski" onclick="WinOpen_z1()"><br><br>
+    <input type="button" value="zadanie2-Ostrowski" onclick="WinOpen_z2()"><br><br>
+    <input type="button" value="zadanie3-Ostrowski" onclick="WinOpen_z3()"><br><br>
+    <input type="button" value="zadanie4-Ostrowski" onclick="WinOpen_z4()"><br><br>
+    <input type="button" value="zadanie5-Ostrowski" onclick="WinOpen_z5()"><br><br>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+</form>
+
+</body>
+</html>
