@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+<meta charset="utf-8">
+<title>Zadanie 9 - Prompt Box</title>
+<script type="text/javascript">
+function show_prompt() {
+    var name = prompt("Napisz imię", "Xavier");
+    if (name != null && name != "") {
+        document.write("Witaj " + name + "! Jak się masz?");
+    }
+}
+</script>
+</head>
+<body>
+<!-- Xavier Ostrowski, Klasa 3F, ZSE Gdańsk -->
+<p><b>Zastosowanie:</b><br>Wprowadzanie danych przez użytkownika.</p>
+<input type="button" onclick="show_prompt()" value="Pokaż prompt box" />
+</body>
+</html>

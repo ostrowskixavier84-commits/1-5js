@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+<meta charset="utf-8">
+<title>Zadanie 12 - Ile sekund modyfikacja</title>
+</head>
+<body>
+<!-- Xavier Ostrowski, Klasa 3F, ZSE Gdańsk -->
+<div style="color:green; font-size:67px;">
+<script language="JavaScript">
+var D1_xav = prompt("Data1 (dzień)=", "");
+var G1_xav = prompt("Godzina1=", "");
+var D2_xav = prompt("Data2 (dzień)=", "");
+var G2_xav = prompt("Godzina2=", "");
+
+var a = parseFloat(D1_xav);
+var g1 = parseFloat(G1_xav);
+var b = parseFloat(D2_xav);
+var g2 = parseFloat(G2_xav);
+
+var sekund = ((a - b) * 24 + (g1 - g2)) * 60 * 60;
+document.write("Ilość sekund między dniem " + a + " (godz. " + g1 + ") a dniem " + b + " (godz. " + g2 + ") = " + sekund + " sekund<br>");
+
+function okno_zamknij_xav() {
+    window.close();
+}
+</script>
+</div>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_xav()"/>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+<meta charset="utf-8">
+<title>Zadanie 14 - Trzy ułamki egipskie</title>
+</head>
+<body>
+<!-- Xavier Ostrowski, Klasa 3F, ZSE Gdańsk -->
+<div style="color:blue; font-size:35px;">
+<script language="JavaScript">
+var m_s = prompt("m=", "");
+var m_xav = parseFloat(m_s);
+var a = m_xav + 2;
+var b = (m_xav + 1) * (m_xav + 2);
+var c = m_xav * (m_xav + 1);
+
+document.write("1/" + m_xav + " = 1/" + a + " + 1/" + b + " + 1/" + c + "<br>");
+
+function okno_zamknij_xav() {
+    window.close();
+}
+</script>
+</div>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_xav()"/>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+<meta charset="utf-8">
+<title>Zadanie 16 - Sterowanie wydrukami</title>
+</head>
+<body>
+<!-- Xavier Ostrowski, Klasa 3F, ZSE Gdańsk -->
+<div style="color:navy; font-size:25px;">
+<script language="JavaScript">
+var a_s = prompt("Podaj pierwszą liczbę A=", "");
+var b_s = prompt("Podaj drugą liczbę B=", "");
+var A = parseFloat(a_s);
+var B = parseFloat(b_s);
+
+var a3 = Math.pow(A, 3);
+var a2b = 3 * Math.pow(A, 2) * B;
+var ab2 = 3 * A * Math.pow(B, 2);
+var b3 = Math.pow(B, 3);
+var suma_wynik = a3 + a2b + ab2 + b3;
+
+document.write("wczytane liczby:<br>");
+document.write("A=" + A + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B=" + B + "<br><br>");
+document.write("(" + A + "+" + B + ")^3 = " + a3 + " + " + a2b + " + " + ab2 + " + " + b3 + " = " + suma_wynik + "<br>");
+
+function okno_zamknij_xav() {
+    window.close();
+}
+</script>
+</div>
+<br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_xav()"/>
+</body>
+</html>
